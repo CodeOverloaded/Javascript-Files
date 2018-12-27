@@ -1,0 +1,64 @@
+<html>
+<head></head>
+<body>
+<script type = "text/javascript">
+	var people = new Array("Michael", "Peter", "Arden");
+	document.write(people[0]);
+	
+	var things = new Array(3);
+	things[0] = "Object1";
+	things[1] = "Object2";
+	things[2] = "Object3";
+	document.write(things[0]);
+	
+	var stuff = new Array();
+	stuff[0] = 0;
+	stuff[1] = 1;
+	stuff[2] = 2;
+	document.write(stuff[0]);
+	document.write("<br>");
+	document.write(things.length + "<br>");
+	
+	var combined = people.concat(stuff);
+	for(var i = 0; i < combined.length; i++){
+		document.write(combined[i] + " ");
+	}
+	document.write("<br>");
+	var string1 = things.join("█");
+	document.write(string1 + "<br>");
+	
+	things.pop();
+	document.write(things[2]);
+	
+	
+	
+	stuff.reverse();
+	stuff.push(3, 4);
+	
+	
+	//Prompt
+	var arr = new Array();
+	for(i = 0; i < 3; i++){
+	var input = prompt("Enter input:", "");
+		arr.push(input);
+	}
+	
+	var string = arr.join();
+	document.write("<br>" + string);
+	
+	// Array index with strings
+	var colors = new Array();
+	colors["blue"] = "blue";
+	colors["red"] = "red";
+	document.write("<br>" + colors["blue"]);
+	
+	//Sqrt
+	document.write("<br>");
+	function sqrt(){
+		var n = prompt("Enter num", "");
+		alert(Math.sqrt(n));
+	}
+	sqrt();
+</script>
+</body>
+</html>

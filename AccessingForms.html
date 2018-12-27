@@ -1,0 +1,45 @@
+<html>
+<head>
+<script type = "text/javascript">
+	//Validate checkbox clicked
+	function validator(){
+		if(document.form1.box.checked){
+			alert("chcked");
+		}
+		if(document.form1.username.value=="mli25782"){
+			alert("name");
+		}
+		if(document.form1.password.value=="xk45"){
+			alert("password");
+		}
+	}
+</script>
+</head>
+<body>
+
+<form name = "form1">
+	Username: <input type = "text" name = "username">
+	Password: <input type = "password" name = "password">
+	<input type = "submit" value = "Submit" onClick="validator()";>
+	<input type = "checkbox" name = "box">
+</form>
+<script type = "text/javascript">
+	//Forms are stored as arrays
+	//First form - forms[0]
+	//Second form - forms[1] 
+	
+	var x = document.forms[0].length;
+	document.write(x);
+	
+	//Access elements in forms array
+	var y = document.forms[0].elements[0].name;
+	document.write(y);
+	
+	//Can access forms using its name
+	var z = document.form1.elements[1].name;
+	document.write(z);
+
+	
+</script>
+</body>
+</html>

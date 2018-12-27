@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type = "text/javascript">
+	function person(name, age){
+		this.name = name;
+		this.age = age;
+		this.get_age = getAge;
+	}
+	
+	function getAge(){
+		return this.age;
+	}
+	var p1 = new person("Michael", 18);
+	var p2 = new person("Michael", 18);
+	
+	var p3 = {name:"Arden", age:25};
+</script>
+</head>
+<body>
+
+<script type = "text/javascript">
+	document.write(p1==p2);
+	p1.name="Peter";
+	document.write(p1.name);
+	document.write(p3.name);
+	document.write("<br>");
+	document.write(p1.get_age());
+</script>
+
+</body>
+</html>
